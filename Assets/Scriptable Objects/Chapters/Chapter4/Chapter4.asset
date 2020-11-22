@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcd60222f368cf4fac97ee3bcc1ada5, type: 3}
+  m_Name: Chapter4
+  m_EditorClassIdentifier: 
+  chapterNum: 3
+  lastChapter: 1
+  sentences:
+  - {fileID: 11400000, guid: d707c227a29e9ed4d92faea4b7a65d4f, type: 2}
+  - {fileID: 11400000, guid: 500578aba58441b479bf266ceb20bd44, type: 2}
+  - {fileID: 11400000, guid: 40deeecd9328eeb419d9d4fd3416abec, type: 2}
+  - {fileID: 11400000, guid: 31bbb0c71568f4448b66b733fcfcce66, type: 2}
+  - {fileID: 11400000, guid: f3ce2eb5bfc00ec4dbc26012a519edcf, type: 2}
+  - {fileID: 11400000, guid: 8eacd35951732cf4ba34619f4414a69f, type: 2}
+  - {fileID: 11400000, guid: eeafc04e0bd51814fb6e95884edb7b9d, type: 2}
+  - {fileID: 11400000, guid: a5a2dd1cd86ee0b428af644bf32b2476, type: 2}
+  - {fileID: 11400000, guid: 03eae9db0c42c244480efdb63a766c40, type: 2}
+  - {fileID: 11400000, guid: 7f4dcb0771f6118478748ca9fe66b056, type: 2}
+  - {fileID: 11400000, guid: 60d1e3b00fb3d7e40ae254237f141a0a, type: 2}
+  - {fileID: 11400000, guid: 6f6125ab1061b254395a35e49cf21a16, type: 2}
+  - {fileID: 11400000, guid: cfe858e4cee5bc84baa1be505a405cbb, type: 2}
+  - {fileID: 11400000, guid: 46e7eb8f079c3ae4f91c73ee23675d78, type: 2}
+  - {fileID: 11400000, guid: 44b4cdb402f64914b9505b7fa5c24c3d, type: 2}
+  - {fileID: 11400000, guid: 7c56be0a8c42e474d9632bf34516ed6c, type: 2}
+  - {fileID: 11400000, guid: 1b0281292424bb34096ba8b5683487db, type: 2}
+  - {fileID: 11400000, guid: 253e4300ea938d049bfcfa8d1d6d06df, type: 2}
+  - {fileID: 11400000, guid: c896ac3e7e24bcb468fce87727c55def, type: 2}
+  - {fileID: 11400000, guid: b1a149ad51525b847ac00331da41f638, type: 2}
+  - {fileID: 11400000, guid: 744fc8cd8c4aa7d45b0c867a948247a2, type: 2}
+  - {fileID: 11400000, guid: 4d9fd14764c1c6c488dcece62161f4c8, type: 2}
+  - {fileID: 11400000, guid: faf148ec277ca6c4893e68480146f5fe, type: 2}
+  - {fileID: 11400000, guid: b1ccfd871f3d29640affd6e31c2f4b43, type: 2}
+  - {fileID: 11400000, guid: 8e5c8aac4b841174f97759a66cfe8853, type: 2}
+  - {fileID: 11400000, guid: 0bdc026185a72e64b8d6755d8e3b3bf7, type: 2}
+  - {fileID: 11400000, guid: b72639297539a6c4da5b2825aa7ca80f, type: 2}
+  - {fileID: 11400000, guid: 3d91cb439d4abe144964661421dfea02, type: 2}
+  - {fileID: 11400000, guid: 850a332c0381f0c4db8098ec0283a57b, type: 2}
+  - {fileID: 11400000, guid: 0bae3b9d36f0edf43b7572be9e6b04de, type: 2}
+  - {fileID: 11400000, guid: d01576172b82d8d4fa512538f65bf5e7, type: 2}
+  - {fileID: 11400000, guid: 7af2e745ef10e0e439ce90321b64171c, type: 2}
+  - {fileID: 11400000, guid: 431ba9336e31746498e1d53229234bf3, type: 2}
+  - {fileID: 11400000, guid: a9d0ed02a8aebd94f89dd7eda84e164d, type: 2}
+  - {fileID: 11400000, guid: 8256efc21ce7b044f8aec197ee9e27f8, type: 2}
+  - {fileID: 11400000, guid: a6565fbd0c3c3434a98f0e7f582e8b23, type: 2}
+  - {fileID: 11400000, guid: 60e447e3b3eae774c8548708a0e3dba6, type: 2}
+  - {fileID: 11400000, guid: 196e7c0cf5e4267439764ed4d0fb7475, type: 2}
+  - {fileID: 11400000, guid: 7b5ed4415fd684f4eb1d71b14bb667c4, type: 2}
+  - {fileID: 11400000, guid: 767ecdf371ffd22489fc2cc0066564ec, type: 2}
+  - {fileID: 11400000, guid: 4aa3904e6e6bbab41825ff267e4e3be8, type: 2}
+  - {fileID: 11400000, guid: 5fcb20480e9547f429e0a077dbcaebdc, type: 2}
+  - {fileID: 11400000, guid: 14c804cc59b345f4b94f44fef291a3a3, type: 2}
+  - {fileID: 11400000, guid: 2ec2642b5b964eb46bacdcb11bfabcdd, type: 2}
+  - {fileID: 11400000, guid: c83b2261fd292fa458ccd11d7a5f61da, type: 2}
+  - {fileID: 11400000, guid: 5939e2a51d17e2b4d915067525db97a8, type: 2}
+  - {fileID: 11400000, guid: c3bdd42eacbe0a249b0b396aa5da6d77, type: 2}
+  - {fileID: 11400000, guid: 28990b61ce3d69544b2825d45973dc21, type: 2}
+  - {fileID: 11400000, guid: 60d6c98f9f8f45348b674bfd346f7200, type: 2}
+  - {fileID: 11400000, guid: 45988bda25912a6479032f6538b3e4d2, type: 2}
+  failSentences: []
