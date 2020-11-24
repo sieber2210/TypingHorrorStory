@@ -22,15 +22,12 @@ public class CheckTyping : MonoBehaviour
     bool lastChapter;
     int failCount = 0;
 
-    private EventInstance instance;
-    [EventRef]
-    public string fmodEvent;
+    FMOD.Studio.EventInstance ChapterAudio;
+    int num2;
 
     private void Start()
     {
-        instance = RuntimeManager.CreateInstance(fmodEvent);
-        instance.start();
-        input.Select();
+
     }
 
     private void Update()
@@ -46,10 +43,11 @@ public class CheckTyping : MonoBehaviour
     {
         if (string.Compare(typedWord.ToLower(), wordToCheck.ToLower()) == 0)
         {
-            if(words[currentWord].audioEvent != null) RuntimeManager.PlayOneShot(words[currentWord].audioEvent, new Vector3(0f, 0f, -10f)); //if the variable on the current word is not empty play the sound referenced on the variable
             wordObjs[currentWord].SetActive(false);
             currentWord++;
             ContinueGame(typedWord);
+
+            SentenceAudio();
         }
         else if (typedWord.ToLower() == "menu".ToLower())
         {
@@ -127,5 +125,21 @@ public class CheckTyping : MonoBehaviour
     public int GetChapter()
     {
         return chapter;
+    }
+    void SentenceAudio()
+    {
+        string sentNum;
+        int num = currentWord + 1;
+        sentNum = num.ToString();
+
+        string chapNum;
+        int num2 = chapter;
+        chapNum = num2.ToString();
+
+        string sentenceNumber = ("event:/Chapter" + chapNum + "/Sentence" + sentNum);
+        Debug.Log(sentenceNumber);
+        ChapterAudio = FMODUnity.RuntimeManager.CreateInstance(sentenceNumber);
+        ChapterAudio.start();
+        Debug.Log(chapter);
     }
 }
