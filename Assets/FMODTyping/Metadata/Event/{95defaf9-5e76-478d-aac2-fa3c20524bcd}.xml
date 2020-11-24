@@ -8,7 +8,7 @@
 			<value>5</value>
 		</property>
 		<relationship name="folder">
-			<destination>{01e5fb29-6c24-4d2d-8703-a9e66df663cd}</destination>
+			<destination>{7a122f5a-2e6d-4fde-9f2f-310930ed6f3b}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{2d428bf6-07d8-4443-8436-861ae824e003}</destination>
@@ -57,7 +57,7 @@
 			<destination>{b4b0c446-d409-4752-b824-59ce06d5b30f}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{24d0bdf7-4736-464d-aae0-05c6ed1d647f}</destination>
+			<destination>{4fa9fdb6-9cc6-4fe1-a50f-a5607536cdd7}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{c3c8a493-b90f-468d-a249-85dc4dcbe0aa}" />
@@ -134,14 +134,17 @@
 		<property name="maximumTimeBetweenSounds">
 			<value>3500</value>
 		</property>
+		<property name="minimumScatterDistance">
+			<value>3</value>
+		</property>
 		<property name="maximumScatterDistance">
-			<value>350</value>
+			<value>60</value>
 		</property>
 		<property name="volumeRandomization">
 			<value>-0.5</value>
 		</property>
 		<property name="pitchRandomization">
-			<value>0.850000024</value>
+			<value>0.349999994</value>
 		</property>
 		<relationship name="sound">
 			<destination>{be064c71-24db-4a0b-a9a9-a34a9767c948}</destination>

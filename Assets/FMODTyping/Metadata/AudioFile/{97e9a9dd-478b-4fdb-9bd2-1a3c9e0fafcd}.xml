@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{97e9a9dd-478b-4fdb-9bd2-1a3c9e0fafcd}">
 		<property name="assetPath">
-			<value>Bloody Nightmare - Death Pacts_23.wav</value>
+			<value>Damage/Bloody Nightmare - Death Pacts_23.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>96</value>

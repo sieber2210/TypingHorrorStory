@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{9c8472f4-36fa-4f2f-a698-89a6b17498fc}">
 		<property name="assetPath">
-			<value>Keys - KeysFrantic.wav</value>
+			<value>Holding/Keys - KeysFrantic.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
