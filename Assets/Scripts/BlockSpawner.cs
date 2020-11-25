@@ -21,6 +21,8 @@ public class BlockSpawner : MonoBehaviour
     private void Start()
     {
         sentenceCountMax = chapter.sentences.Length - 1;
+        InstantiateSentence();
+        sentenceCount++;
     }
 
     private void Update()
@@ -56,7 +58,7 @@ public class BlockSpawner : MonoBehaviour
     {
         GameObject sentence = Instantiate(chapter.sentences[sentenceCount].sentencePrefab, new Vector3(0f, 55f, 0f), Quaternion.identity, transform);
         TextMesh sentenceTextMesh = sentence.GetComponent<TextMesh>();
-        sentenceTextMesh.text = chapter.sentences[sentenceCount].sentence;
+        sentenceTextMesh.text = chapter.sentences[sentenceCount].sentence + " : " + sentenceCount;
         typeCheck.SetCurrentWord(chapter.sentences[sentenceCount], sentence, sentenceCountMax, chapter.chapterNum, chapter.lastChapter);
     }
 
@@ -64,7 +66,7 @@ public class BlockSpawner : MonoBehaviour
     {
         GameObject sentence = Instantiate(chapter.sentences[sentenceCount].sentencePrefab, new Vector3(0f, 55f, 0f), Quaternion.identity, transform);
         TextMesh sentenceTextMesh = sentence.GetComponent<TextMesh>();
-        sentenceTextMesh.text = chapter.failSentences[failCount].failSentence;
+        sentenceTextMesh.text = chapter.failSentences[failCount].failSentence + " : " + sentenceCount;
         typeCheck.SetCurrentWord(chapter.sentences[sentenceCount], sentence, sentenceCountMax, chapter.chapterNum, chapter.lastChapter);
     }
 

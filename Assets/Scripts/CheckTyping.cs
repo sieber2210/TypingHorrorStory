@@ -99,7 +99,7 @@ public class CheckTyping : MonoBehaviour
         if (failCount <= failCountMax)
         {
             failure.FailedSentence();
-            spawner.InstantiateFailSentence(failCount);
+            //spawner.InstantiateFailSentence(failCount);
             failCount++;
             Test(failCount);
         }
@@ -130,7 +130,7 @@ public class CheckTyping : MonoBehaviour
     void SentenceAudio()
     {
         string sentNum;
-        int num = currentWord + 1;
+        int num = currentWord;// + 1;
         sentNum = num.ToString();
 
         string chapNum;
