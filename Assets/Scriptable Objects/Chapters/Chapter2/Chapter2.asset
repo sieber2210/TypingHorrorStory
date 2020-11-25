@@ -54,3 +54,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 88a5de567e540fc4b82a4b1d595d4bdb, type: 2}
   - {fileID: 11400000, guid: 12f9f55872defe045acda58972b59a1b, type: 2}
   - {fileID: 11400000, guid: 45988bda25912a6479032f6538b3e4d2, type: 2}
+  failSentences:
+  - {fileID: 11400000, guid: 59f51512d4a7baa4eb600af935185b6c, type: 2}
+  - {fileID: 11400000, guid: 8aa3a081be48ff7409a5389a644f9089, type: 2}
+  - {fileID: 11400000, guid: a8c6b9d0ef1887542ab510422d32330a, type: 2}
