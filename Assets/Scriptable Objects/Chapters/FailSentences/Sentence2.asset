@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3d313436eb85549a849f731f5504e8, type: 3}
   m_Name: Sentence2
   m_EditorClassIdentifier: 
-  failSentence: Your heart begins to pund uncontrollably
+  failSentence: Your heart begins to pound uncontrollably

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3d313436eb85549a849f731f5504e8, type: 3}
   m_Name: Sentence3
   m_EditorClassIdentifier: 
-  failSentence: The sweat begins to pur from you and your heart feels very tight
+  failSentence: The sweat begins to pour and your heart feels very tight
