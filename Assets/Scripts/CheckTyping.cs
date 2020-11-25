@@ -63,6 +63,7 @@ public class CheckTyping : MonoBehaviour
         }
 
         input.text = "";
+        spawner.DecreaseScreenCount();
     }
 
     void ContinueGame(string typedWord)

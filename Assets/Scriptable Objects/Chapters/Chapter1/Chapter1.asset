@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Chapter1
   m_EditorClassIdentifier: 
   chapterNum: 1
+  lastChapter: 0
   sentences:
   - {fileID: 11400000, guid: d1a258a2724a3be4c8c0b8861cd91210, type: 2}
   - {fileID: 11400000, guid: e10386a9340ddcd4ba4d6f2304051c47, type: 2}
@@ -21,3 +22,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c972dc7ea20c670488cdf614b768bf5f, type: 2}
   - {fileID: 11400000, guid: 3471b67c716ade94e888ebd0f7ba8860, type: 2}
   - {fileID: 11400000, guid: 45988bda25912a6479032f6538b3e4d2, type: 2}
+  failSentences:
+  - {fileID: 11400000, guid: 59f51512d4a7baa4eb600af935185b6c, type: 2}
+  - {fileID: 11400000, guid: 8aa3a081be48ff7409a5389a644f9089, type: 2}
+  - {fileID: 11400000, guid: a8c6b9d0ef1887542ab510422d32330a, type: 2}

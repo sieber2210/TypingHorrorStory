@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Chapter5
   m_EditorClassIdentifier: 
   chapterNum: 3
-  lastChapter: 1
+  lastChapter: 0
   sentences: []
-  failSentences: []
+  failSentences:
+  - {fileID: 11400000, guid: 59f51512d4a7baa4eb600af935185b6c, type: 2}
+  - {fileID: 11400000, guid: 8aa3a081be48ff7409a5389a644f9089, type: 2}
+  - {fileID: 11400000, guid: a8c6b9d0ef1887542ab510422d32330a, type: 2}

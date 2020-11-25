@@ -46,6 +46,7 @@ public class BlockSpawner : MonoBehaviour
             if(sentencesOnScreen > sentencesOnScreenMax)
             {
                 typeCheck.RemoveOldWord();
+                DecreaseScreenCount();
             }
         }
         else canSpawn = false;
@@ -65,5 +66,10 @@ public class BlockSpawner : MonoBehaviour
         TextMesh sentenceTextMesh = sentence.GetComponent<TextMesh>();
         sentenceTextMesh.text = chapter.failSentences[failCount].failSentence;
         typeCheck.SetCurrentWord(chapter.sentences[sentenceCount], sentence, sentenceCountMax, chapter.chapterNum, chapter.lastChapter);
+    }
+
+    public void DecreaseScreenCount()
+    {
+        sentencesOnScreen--;
     }
 }
