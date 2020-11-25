@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{17b790e9-33d8-49b7-9f12-d57fa86757ec}">
+		<property name="assetPath">
+			<value>Bloody Nightmare - Breaths_28.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.1201770833333331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c8eb51bd-86e5-4a8f-8ea3-fb69b3185688}</destination>
+		</relationship>
+	</object>
+</objects>
