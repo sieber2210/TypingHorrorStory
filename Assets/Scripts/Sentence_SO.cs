@@ -8,5 +8,4 @@ public class Sentence_SO : ScriptableObject
     [TextArea]
     public string sentence;
 
-    public string audioEvent;
 }

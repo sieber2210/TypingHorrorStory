@@ -23,6 +23,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 949
+--- !u!114 &-9046937339761994648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Chapter2/Sentence0
+  m_EditorClassIdentifier: 
+  Path: event:/Chapter2/Sentence0
+  guid: 718795ac720979438198b7cbba5fe25c
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3970
 --- !u!114 &-8882552757503630857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,13 +130,13 @@ MonoBehaviour:
   guid: e5e19551e770cd4197579c78153bfb01
   Banks:
   - {fileID: 8820541341125649432}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 949
+  Length: 4875
 --- !u!114 &-8621327900359331905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,7 +409,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 905
+  Length: 5205
 --- !u!114 &-8003305148930969006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,7 +432,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 905
+  Length: 0
 --- !u!114 &-7997727287709904712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,7 +639,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1003
+  Length: 0
 --- !u!114 &-7444439536252158381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -867,7 +889,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 925
+  Length: 0
 --- !u!114 &-6769606807369471998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1396,7 +1418,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 22000
+  Length: 8000
 --- !u!114 &-5501092664775482006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1668,7 +1690,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 949
+  Length: 564
 --- !u!114 &-4834456487846030715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1852,7 +1874,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 835
+  Length: 0
 --- !u!114 &-4329511803493749813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1875,7 +1897,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 935
+  Length: 0
 --- !u!114 &-4305743118694934412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1915,13 +1937,13 @@ MonoBehaviour:
   guid: 9c55c410ace58b4b8cb6124b06404e93
   Banks:
   - {fileID: 8820541341125649432}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 754
+  Length: 4000
 --- !u!114 &-4222787769328561827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2260,13 +2282,13 @@ MonoBehaviour:
   guid: 78c71e5eae7aaa4d987d047e88b9b8fb
   Banks:
   - {fileID: 8820541341125649432}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 755
+  Length: 19471
 --- !u!114 &-3011209083592927954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3085,7 +3107,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1003
+  Length: 0
 --- !u!114 &-943925281831292716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3108,7 +3130,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 935
+  Length: 2564
 --- !u!114 &-942666644814950025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3217,13 +3239,13 @@ MonoBehaviour:
   guid: 0b2b4875bf7ac34e98cce9f30efe63ce
   Banks:
   - {fileID: 8820541341125649432}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 755
+  Length: 11970
 --- !u!114 &-469797616138327693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3286,13 +3308,13 @@ MonoBehaviour:
   guid: 0090dc20eaf9e148a7ad37a1968be774
   Banks:
   - {fileID: 8820541341125649432}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 835
+  Length: 4000
 --- !u!114 &-330685713542283639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3424,13 +3446,13 @@ MonoBehaviour:
   guid: 313df6fc0ce5a440bc18d2f52f42f298
   Banks:
   - {fileID: 8820541341125649432}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 755
+  Length: 16000
 --- !u!114 &-97792336362387527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3453,7 +3475,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 905
+  Length: 564
 --- !u!114 &-88294108668141127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3826,7 +3848,7 @@ MonoBehaviour:
   - {fileID: 8820541341125649432}
   StringsBanks:
   - {fileID: 2312540315459352582}
-  stringsBankWriteTime: 637418433320159604
+  stringsBankWriteTime: 637418612200000000
   cacheVersion: 5
 --- !u!114 &63296308117764626
 MonoBehaviour:
@@ -4149,7 +4171,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 3970
 --- !u!114 &776290945145205248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4693,7 +4715,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 935
+  Length: 0
 --- !u!114 &1958921589171441933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4739,7 +4761,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 835
+  Length: 564
 --- !u!114 &2126717740907419664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4799,7 +4821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMODTyping/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637418433320159604
+  lastModified: 637418612200000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -5327,7 +5349,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 925
+  Length: 0
 --- !u!114 &4182712872007128915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5804,7 +5826,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 38000
+  Length: 10000
 --- !u!114 &5608559804173788529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5850,7 +5872,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 755
+  Length: 0
 --- !u!114 &5644166398570512133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5965,7 +5987,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 949
+  Length: 0
 --- !u!114 &5861803340951559426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6097,13 +6119,13 @@ MonoBehaviour:
   guid: 6c1039406af24f4a9fc5f7d92c190bfc
   Banks:
   - {fileID: 8820541341125649432}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 754
+  Length: 4000
 --- !u!114 &6150094492672090146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6376,7 +6398,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1003
+  Length: 2390
 --- !u!114 &7070308208340358464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6646,13 +6668,13 @@ MonoBehaviour:
   guid: e079f0006673984e8ecef9aa7b1175f0
   Banks:
   - {fileID: 8820541341125649432}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 925
+  Length: 4000
 --- !u!114 &7945498998431611068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6695,7 +6717,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 925
+  Length: 0
 --- !u!114 &8061885650996945858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6922,7 +6944,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 754
+  Length: 0
 --- !u!114 &8629855155910912442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7098,7 +7120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMODTyping/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637418433320149598
+  lastModified: 637418612200000000
   LoadResult: 0
   FileSizes: []
   Exists: 1

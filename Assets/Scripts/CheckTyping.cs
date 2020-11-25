@@ -41,11 +41,12 @@ public class CheckTyping : MonoBehaviour
     void Checker(string typedWord, string wordToCheck)
     {
         if (string.Compare(typedWord.ToLower(), wordToCheck.ToLower()) == 0)
-        {
+        {            
             wordObjs[currentWord].SetActive(false);
             currentWord++;
             ContinueGame(typedWord);
 
+            //Havokk
             SentenceAudio();
         }
         else if (typedWord.ToLower() == "menu".ToLower())
@@ -102,6 +103,9 @@ public class CheckTyping : MonoBehaviour
             //spawner.InstantiateFailSentence(failCount);
             failCount++;
             Test(failCount);
+
+            //Havokk
+
         }
         else
         {
@@ -127,7 +131,26 @@ public class CheckTyping : MonoBehaviour
     {
         return chapter;
     }
-    void SentenceAudio()
+    public void SentenceAudio()
+    {
+        string sentNum;
+        int num = currentWord + 1;
+        sentNum = num.ToString();
+
+        string chapNum;
+        num2 = chapter;
+        chapNum = num2.ToString();
+
+        string sentenceNumber = ("event:/Chapter" + chapNum + "/Sentence" + sentNum);
+        string PlayerStateEvent = sentenceNumber;
+
+        Debug.Log(sentenceNumber);
+        ChapterAudio = FMODUnity.RuntimeManager.CreateInstance(sentenceNumber);
+        ChapterAudio.start();
+        Debug.Log(chapter);
+    }
+
+    /*void SentenceAudioFix()
     {
         string sentNum;
         int num = currentWord;// + 1;
@@ -139,8 +162,6 @@ public class CheckTyping : MonoBehaviour
 
         string sentenceNumber = ("event:/Chapter" + chapNum + "/Sentence" + sentNum);
         Debug.Log(sentenceNumber);
-        ChapterAudio = FMODUnity.RuntimeManager.CreateInstance(sentenceNumber);
-        ChapterAudio.start();
-        Debug.Log(chapter);
-    }
+    }*/
+
 }

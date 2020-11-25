@@ -876,7 +876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chapter: {fileID: 11400000, guid: 4e0c3e0f57274ab489e3a1d5e6e6937a, type: 2}
-  timeBetweenSpawn: 10.07
+  timeBetweenSpawn: 8
   canSpawn: 1
   typeCheck: {fileID: 1444776547}
   sentencesOnScreenMax: 12
