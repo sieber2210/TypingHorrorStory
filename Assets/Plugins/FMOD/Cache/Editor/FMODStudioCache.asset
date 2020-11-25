@@ -114,7 +114,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 949
+  Length: 3209
 --- !u!114 &-8621327900359331905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1668,7 +1668,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 949
+  Length: 0
 --- !u!114 &-4834456487846030715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1915,13 +1915,13 @@ MonoBehaviour:
   guid: 9c55c410ace58b4b8cb6124b06404e93
   Banks:
   - {fileID: 8820541341125649432}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 754
+  Length: 4000
 --- !u!114 &-4222787769328561827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2260,13 +2260,13 @@ MonoBehaviour:
   guid: 78c71e5eae7aaa4d987d047e88b9b8fb
   Banks:
   - {fileID: 8820541341125649432}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 755
+  Length: 19471
 --- !u!114 &-3011209083592927954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3108,7 +3108,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 935
+  Length: 0
 --- !u!114 &-942666644814950025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3453,7 +3453,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 905
+  Length: 0
 --- !u!114 &-88294108668141127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3826,7 +3826,7 @@ MonoBehaviour:
   - {fileID: 8820541341125649432}
   StringsBanks:
   - {fileID: 2312540315459352582}
-  stringsBankWriteTime: 637418148940000000
+  stringsBankWriteTime: 637418424020000000
   cacheVersion: 5
 --- !u!114 &63296308117764626
 MonoBehaviour:
@@ -4739,7 +4739,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 835
+  Length: 0
 --- !u!114 &2126717740907419664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4799,7 +4799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMODTyping/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637418148940000000
+  lastModified: 637418424020000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -5804,7 +5804,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 44000
+  Length: 38000
 --- !u!114 &5608559804173788529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6376,7 +6376,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1003
+  Length: 2390
 --- !u!114 &7070308208340358464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6646,13 +6646,13 @@ MonoBehaviour:
   guid: e079f0006673984e8ecef9aa7b1175f0
   Banks:
   - {fileID: 8820541341125649432}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 925
+  Length: 4000
 --- !u!114 &7945498998431611068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7098,7 +7098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMODTyping/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637418148940000000
+  lastModified: 637418424020000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
