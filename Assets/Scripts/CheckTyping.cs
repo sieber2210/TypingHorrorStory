@@ -97,7 +97,7 @@ public class CheckTyping : MonoBehaviour
 
     void Fail()
     {
-        if (failCount <= failCountMax)
+        if (failCount < failCountMax)
         {
             failure.FailedSentence();
             //spawner.InstantiateFailSentence(failCount);
