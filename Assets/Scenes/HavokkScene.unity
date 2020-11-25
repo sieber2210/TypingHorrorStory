@@ -877,11 +877,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df781ceab3d102841895624a8de8c22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 1118361751}
   failure: {fileID: 1748420477}
   input: {fileID: 842795675}
   failCountMax: 3
-  chapter: 1
-  fmodEvent: event:/Music/Music
+  winBuildIndex: 7
+  loseBuildIndex: 8
 --- !u!1 &1606849841
 GameObject:
   m_ObjectHideFlags: 0

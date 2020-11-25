@@ -27,7 +27,7 @@ public class CheckTyping : MonoBehaviour
 
     private void Start()
     {
-
+        input.ActivateInputField();
     }
 
     private void Update()
@@ -35,7 +35,6 @@ public class CheckTyping : MonoBehaviour
         if (currentWord <= amountofSentences && Input.GetKeyDown(KeyCode.Return))
         {
             Checker(input.text, words[currentWord].sentence);
-            input.ActivateInputField();
         }
     }
 
@@ -64,6 +63,7 @@ public class CheckTyping : MonoBehaviour
 
         input.text = "";
         spawner.DecreaseScreenCount();
+        input.ActivateInputField();
     }
 
     void ContinueGame(string typedWord)
