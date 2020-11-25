@@ -58,7 +58,7 @@ public class BlockSpawner : MonoBehaviour
     {
         GameObject sentence = Instantiate(chapter.sentences[sentenceCount].sentencePrefab, new Vector3(0f, 55f, 0f), Quaternion.identity, transform);
         TextMesh sentenceTextMesh = sentence.GetComponent<TextMesh>();
-        sentenceTextMesh.text = chapter.sentences[sentenceCount].sentence + " : " + sentenceCount;
+        sentenceTextMesh.text = chapter.sentences[sentenceCount].sentence;
         typeCheck.SetCurrentWord(chapter.sentences[sentenceCount], sentence, sentenceCountMax, chapter.chapterNum, chapter.lastChapter);
     }
 
@@ -66,7 +66,7 @@ public class BlockSpawner : MonoBehaviour
     {
         GameObject sentence = Instantiate(chapter.sentences[sentenceCount].sentencePrefab, new Vector3(0f, 55f, 0f), Quaternion.identity, transform);
         TextMesh sentenceTextMesh = sentence.GetComponent<TextMesh>();
-        sentenceTextMesh.text = chapter.failSentences[failCount].failSentence + " : " + sentenceCount;
+        sentenceTextMesh.text = chapter.failSentences[failCount].failSentence;
         typeCheck.SetCurrentWord(chapter.sentences[sentenceCount], sentence, sentenceCountMax, chapter.chapterNum, chapter.lastChapter);
     }
 
