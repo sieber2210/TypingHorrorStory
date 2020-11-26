@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{3a319c3e-f5c9-49e6-aa4a-b7089aee2389}">
 		<property name="name">
-			<value>Sentence25</value>
+			<value>Sentence29</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -77,6 +77,9 @@
 		</relationship>
 	</object>
 	<object class="GroupTrack" id="{d0b14381-620c-4a5d-b4c6-ad0364d4d99a}">
+		<relationship name="modules">
+			<destination>{4b743293-1e88-4d23-bc42-ef192fb630c9}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{3ae884ca-2fad-4b20-85ad-c9f7c8e048ec}</destination>
 		</relationship>
@@ -85,6 +88,7 @@
 		<relationship name="modules">
 			<destination>{c6c95d8f-18e0-457a-a977-4ca41cced8e2}</destination>
 			<destination>{be99d7f5-fb65-4f85-8cbf-594c0d9cc3d2}</destination>
+			<destination>{4b743293-1e88-4d23-bc42-ef192fb630c9}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{489b836e-e33f-453e-9e63-4dd234f6eeb0}">
@@ -163,7 +167,21 @@
 			<destination>{489b836e-e33f-453e-9e63-4dd234f6eeb0}</destination>
 		</relationship>
 	</object>
+	<object class="SingleSound" id="{4b743293-1e88-4d23-bc42-ef192fb630c9}">
+		<property name="start">
+			<value>2.125</value>
+		</property>
+		<property name="length">
+			<value>12.52440625</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{e57357ef-a6de-4b6d-a14b-d7ce47b56221}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{3ae884ca-2fad-4b20-85ad-c9f7c8e048ec}">
+		<property name="volume">
+			<value>-14</value>
+		</property>
 		<property name="name">
 			<value>Audio 3</value>
 		</property>
