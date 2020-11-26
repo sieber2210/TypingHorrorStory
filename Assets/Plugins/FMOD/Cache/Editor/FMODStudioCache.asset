@@ -3360,7 +3360,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 30428
+  Length: 29000
 --- !u!114 &-760059496478578866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4020,7 +4020,7 @@ MonoBehaviour:
   - {fileID: 8820541341125649432}
   StringsBanks:
   - {fileID: 2312540315459352582}
-  stringsBankWriteTime: 637419101400000000
+  stringsBankWriteTime: 637419118731481375
   cacheVersion: 5
 --- !u!114 &63296308117764626
 MonoBehaviour:
@@ -5039,7 +5039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMODTyping/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637419101400000000
+  lastModified: 637419118731481375
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -6481,7 +6481,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 4000
+  Length: 2500
 --- !u!114 &6319880329237198027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7384,7 +7384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMODTyping/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637419101400000000
+  lastModified: 637419127211311834
   LoadResult: 0
   FileSizes: []
   Exists: 1
