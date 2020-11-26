@@ -14,7 +14,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chapterNum: 3
   lastChapter: 0
-  sentences: []
+  sentences:
+  - {fileID: 11400000, guid: 83c0e59a658847e429c5cd358a36c6b5, type: 2}
+  - {fileID: 11400000, guid: ec67a0eaa6477434892ce54b12fa762c, type: 2}
+  - {fileID: 11400000, guid: bf277d98676b8c44792e6e8a4f61e265, type: 2}
+  - {fileID: 11400000, guid: 204947013274aee4a9071c60b7ea133c, type: 2}
+  - {fileID: 11400000, guid: 1d45b82867c7fdb4eaf383f476cbd7fc, type: 2}
+  - {fileID: 11400000, guid: be2d2339653fa5142bfb986aa776c0c4, type: 2}
+  - {fileID: 11400000, guid: bb26cc1cd30744b4095a70f7f05dc667, type: 2}
+  - {fileID: 11400000, guid: 3fcb4e3d452316f47960d0921d918a2d, type: 2}
+  - {fileID: 11400000, guid: 51b55711ed8a9194ca427819dd727e37, type: 2}
+  - {fileID: 11400000, guid: 4fe13d8a23e62874a9226fa0f98e5ba1, type: 2}
+  - {fileID: 11400000, guid: 31fedf4bf4891c64b81a4749d79c21d8, type: 2}
+  - {fileID: 11400000, guid: fb8112f1dc043d047b6e8eb5fa7de4d1, type: 2}
+  - {fileID: 11400000, guid: 10ca35d00aa5feb4ab216c5786a8b36b, type: 2}
+  - {fileID: 11400000, guid: f86f3ae670daeca42950e5f6f3a0e209, type: 2}
+  - {fileID: 11400000, guid: 36c36c2a30b1e5b46a8c430f7fbd800d, type: 2}
+  - {fileID: 11400000, guid: b23c9d3ada4f22d40875baa992ff7216, type: 2}
+  - {fileID: 11400000, guid: 4f3826f81fde7504c90b05c47d40afb0, type: 2}
+  - {fileID: 11400000, guid: acde01ed0c2993e4fa1313449c73d98e, type: 2}
+  - {fileID: 11400000, guid: 71b2a632dd10f7f4e9bba1bd79ced023, type: 2}
+  - {fileID: 11400000, guid: d4751971cb1b9ba4f9c818fe2a13de10, type: 2}
+  - {fileID: 11400000, guid: dedfb70f48a65f44ab3096f3fc22a722, type: 2}
+  - {fileID: 11400000, guid: ab85fffe19328ae4ab0244868b97e857, type: 2}
+  - {fileID: 11400000, guid: 2ee886556abaca8449dacb404d68ed5a, type: 2}
+  - {fileID: 11400000, guid: 714805d3821df3542a6781f005456ccf, type: 2}
+  - {fileID: 11400000, guid: 9e0f2b85542df69488b8178b3793605b, type: 2}
+  - {fileID: 11400000, guid: 36e9c09688d24934bb4815f7ca0abc98, type: 2}
+  - {fileID: 11400000, guid: 6e0938014c410cb4689293885649f24d, type: 2}
+  - {fileID: 11400000, guid: e50654e3b07a70a44841369275240c89, type: 2}
+  - {fileID: 11400000, guid: 12c4b8494635e0246a5404f5acf012c1, type: 2}
+  - {fileID: 11400000, guid: ebd82190279241f41ab2ade67162bd36, type: 2}
+  - {fileID: 11400000, guid: b3e933110f2eeff4aa124c72d5def53d, type: 2}
+  - {fileID: 11400000, guid: 4173367460c581c469e449750e3fc5f7, type: 2}
+  - {fileID: 11400000, guid: bc4df61b6e20a30438cfcfd3180042cf, type: 2}
+  - {fileID: 11400000, guid: e5bcd79418ebf0d42bd59f5c55275223, type: 2}
+  - {fileID: 11400000, guid: 0e8ee4fcc2911394a9eafe43b82cde2e, type: 2}
+  - {fileID: 11400000, guid: c136e6416b8350642b63cf80b582c5c8, type: 2}
+  - {fileID: 11400000, guid: dff923d34b8f75f4dbf0f8e3cd0dbcb5, type: 2}
+  - {fileID: 11400000, guid: faa03ed7047aefe4580562a3d460ac67, type: 2}
+  - {fileID: 11400000, guid: f19993bc717ff724fbed5795a405a1bb, type: 2}
+  - {fileID: 11400000, guid: e1298b77a9e1b1c4b80f18fb1235c173, type: 2}
+  - {fileID: 11400000, guid: beecd24aa6619434592d1deb2744eb1f, type: 2}
+  - {fileID: 11400000, guid: 45988bda25912a6479032f6538b3e4d2, type: 2}
   failSentences:
   - {fileID: 11400000, guid: 59f51512d4a7baa4eb600af935185b6c, type: 2}
   - {fileID: 11400000, guid: 8aa3a081be48ff7409a5389a644f9089, type: 2}
