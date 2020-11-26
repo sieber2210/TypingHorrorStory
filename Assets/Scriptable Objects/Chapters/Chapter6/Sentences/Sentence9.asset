@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06fb012079ccae94bb5bb494d464454a, type: 3}
-  m_Name: Sentence1
+  m_Name: Sentence9
   m_EditorClassIdentifier: 
   sentencePrefab: {fileID: 3416814557418904266, guid: 5f45d4a07216d0340859b4b117ff5bec,
     type: 3}
-  sentence: The hug is short lived
+  sentence: She says the monster has become mad
