@@ -14,6 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentencePrefab: {fileID: 3416814557418904266, guid: 5f45d4a07216d0340859b4b117ff5bec,
     type: 3}
-  sentence: Once you get to the top of the steps you feel a freezing cold around
-    you
-  audioEvent: 
+  sentence: "Carrying her now you rush towards the stairs\r"
