@@ -2,12 +2,14 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=20105 (112138), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=8, nSamplesPerSec=48000, nAvgBytesPerSec=1536000, nBlockAlign=32, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x0000063F, SubFormat=00000003-0000-0010-8000-00AA00389B71.
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] DownMix::init                            : dspbuffersize: 1024  rate: 48000. output speaker mode: 7, input speaker mode 3
+[LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001B46DAB50B8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000202829B3628 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,36 +18,390 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSound                     : setdata soundi = 000002023C808A98 : node = 000002021941EF50
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002023C808A98
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002021941F060
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gusts - Marker #6_2', format=5, channels=2, frequency=48000, lengthbytes=249216, lengthpcm=959833, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.396509.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 49152, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002023C808A98
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000020239890048 : node = 00000202E35D0140
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020239890048
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000202E35D0250
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gusts - Marker #4_2', format=5, channels=2, frequency=48000, lengthbytes=143776, lengthpcm=543588, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.400496.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020239890048
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000020218FB6418 : node = 000002021941F1D0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020218FB6418
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002021941F2E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ConcreteLoopRandom', format=5, channels=2, frequency=48000, lengthbytes=243904, lengthpcm=919988, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.251007.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020218FB6418
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000202DFCDF2A8 : node = 000002021941DDD0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000202DFCDF2A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002021941DEE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gusts - Marker #5_2', format=5, channels=2, frequency=48000, lengthbytes=194016, lengthpcm=743997, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.410736.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000202DFCDF2A8
+[LOG] SoundI::release                          : ConcreteLoopRandom (0000020218FB6418)
+[LOG] SoundI::release                          :     ConcreteLoopRandom (000002023A3C8428)
+[LOG] SoundI::release                          :     ConcreteLoopRandom (0000020218FB6C88)
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002023A3810D8 : node = 00000202E35CF740
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002023A3810D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000202E35CF850
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gusts - Marker #4_2', format=5, channels=2, frequency=48000, lengthbytes=143776, lengthpcm=543588, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.400496.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002023A3810D8
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000020218FB6418 : node = 000002023C255AD0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020218FB6418
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002023C255BE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gusts - Marker #6_2', format=5, channels=2, frequency=48000, lengthbytes=249216, lengthpcm=959833, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.396509.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020218FB6418
+[LOG] SoundI::release                          : Gusts - Marker #4_2 (0000020239890048)
+[LOG] SoundI::release                          :     Gusts - Marker #4_2 (000002023A3C6068)
+[LOG] SoundI::release                          :     Gusts - Marker #4_2 (00000202398903A8)
+[LOG] SoundI::release                          : Gusts - Marker #4_2 (000002023A3810D8)
+[LOG] SoundI::release                          :     Gusts - Marker #4_2 (000002023A3C63A8)
+[LOG] SoundI::release                          :     Gusts - Marker #4_2 (000002023A381438)
+[LOG] SoundI::release                          : Gusts - Marker #6_2 (000002023C808A98)
+[LOG] SoundI::release                          :     Gusts - Marker #6_2 (000002023A3C6BC8)
+[LOG] SoundI::release                          :     Gusts - Marker #6_2 (000002023C80A8F8)
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000202398903A8 : node = 000002023C255E90
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000202398903A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002023C255FA0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gusts - Marker #4_2', format=5, channels=2, frequency=48000, lengthbytes=143776, lengthpcm=543588, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.400496.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000202398903A8
+[LOG] SoundI::release                          : Gusts - Marker #5_2 (00000202DFCDF2A8)
+[LOG] SoundI::release                          :     Gusts - Marker #5_2 (000002023A3C6208)
+[LOG] SoundI::release                          :     Gusts - Marker #5_2 (000002023A381E58)
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002023C809308 : node = 00000202E35CF740
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002023C809308
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000202E35CF850
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gusts - Marker #6_2', format=5, channels=2, frequency=48000, lengthbytes=249216, lengthpcm=959833, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.396509.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002023C809308
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002023A3815E8 : node = 00000202E35D0A00
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002023A3815E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000202E35D0B10
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ConcreteLoopRandom', format=5, channels=2, frequency=48000, lengthbytes=243904, lengthpcm=919988, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.251007.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002023A3815E8
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000202DFCEA588 : node = 00000202E35D0140
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000202DFCEA588
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000202E35D0250
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gusts - Marker #5_2', format=5, channels=2, frequency=48000, lengthbytes=194016, lengthpcm=743997, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.410736.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000202DFCEA588
+[LOG] SoundI::release                          : Gusts - Marker #6_2 (0000020218FB6418)
+[LOG] SoundI::release                          :     Gusts - Marker #6_2 (000002023A3C9128)
+[LOG] SoundI::release                          :     Gusts - Marker #6_2 (0000020218FB6AD8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000076DB4CF458
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD23A87E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD23A87E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD23A87F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD23A87FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000020219365ED8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bloody Nightmare - Death Pacts_36', format=5, channels=2, frequency=48000, lengthbytes=76672, lengthpcm=329748, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.889366.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000076DB4CF458
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD23A87E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD23A87E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD23A87F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD23A87FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000020219365ED8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bloody Nightmare - Death Pacts_23', format=5, channels=2, frequency=48000, lengthbytes=86432, lengthpcm=381124, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.887967.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000076DB4CF458
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD23A87E30
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD23A87E00
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD23A87F00
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD23A87FC0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000020219365ED8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Bloody Nightmare - Death Pacts_34', format=5, channels=2, frequency=48000, lengthbytes=101952, lengthpcm=463955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.887455.
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000020218FB6AD8 : node = 0000020072F0B010
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020218FB6AD8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000020072F0B120
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gusts - Marker #6_2', format=5, channels=2, frequency=48000, lengthbytes=249216, lengthpcm=959833, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.396509.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020218FB6AD8
+[LOG] SoundI::release                          : Gusts - Marker #4_2 (00000202398903A8)
+[LOG] SoundI::release                          :     Gusts - Marker #4_2 (000002023A3C8DE8)
+[LOG] SoundI::release                          :     Gusts - Marker #4_2 (000002023A3810D8)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002023A382D88
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002023A382D88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020218FB6C88
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020218FB6C88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000202DFCDF2A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000202DFCDF2A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002023A381E58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002023A381E58
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000202398903A8 : node = 000002021941F1D0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000202398903A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002021941F2E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gusts - Marker #4_2', format=5, channels=2, frequency=48000, lengthbytes=143776, lengthpcm=543588, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.400496.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000202398903A8
+[LOG] SoundI::release                          : ConcreteLoopRandom (000002023A3815E8)
+[LOG] SoundI::release                          :     ConcreteLoopRandom (000002023A3C70A8)
+[LOG] SoundI::release                          :     ConcreteLoopRandom (000002023A382D88)
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002023A3815E8 : node = 000002021941E050
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002023A3815E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002021941E160
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gusts - Marker #5_2', format=5, channels=2, frequency=48000, lengthbytes=194016, lengthpcm=743997, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.410736.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002023A3815E8
+[LOG] SoundI::release                          : Gusts - Marker #5_2 (00000202DFCEA588)
+[LOG] SoundI::release                          :     Gusts - Marker #5_2 (000002023A3C6208)
+[LOG] SoundI::release                          :     Gusts - Marker #5_2 (00000202DFCDF2A8)
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000202DFCE8218 : node = 000002021941EF50
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000202DFCE8218
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002021941F060
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gusts - Marker #4_2', format=5, channels=2, frequency=48000, lengthbytes=143776, lengthpcm=543588, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.400496.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000202DFCE8218
+[LOG] SoundI::release                          : Gusts - Marker #6_2 (000002023C809308)
+[LOG] SoundI::release                          :     Gusts - Marker #6_2 (000002023A3C6068)
+[LOG] SoundI::release                          :     Gusts - Marker #6_2 (000002023A381E58)
+[LOG] SoundI::release                          : Gusts - Marker #4_2 (00000202398903A8)
+[LOG] SoundI::release                          :     Gusts - Marker #4_2 (000002023A3C8288)
+[LOG] SoundI::release                          :     Gusts - Marker #4_2 (000002023C80A8F8)
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002023C80A8F8 : node = 00000202E35D0140
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002023C80A8F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000202E35D0250
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gusts - Marker #6_2', format=5, channels=2, frequency=48000, lengthbytes=249216, lengthpcm=959833, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.396509.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002023C80A8F8
+[LOG] SoundI::release                          : Gusts - Marker #6_2 (0000020218FB6AD8)
+[LOG] SoundI::release                          :     Gusts - Marker #6_2 (000002023A3C6A28)
+[LOG] SoundI::release                          :     Gusts - Marker #6_2 (0000020218FB6C88)
+[LOG] SystemI::createSound                     : filename = Assets\FMODTyping\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000020218FB6E38 : node = 00000202E35CF740
+[LOG] SystemI::createSound                     : add node to async list : head = 00000202DF9E6618.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000020218FB6E38
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODTyping\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 12830656
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 262400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000202E35CF850
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gusts - Marker #4_2', format=5, channels=2, frequency=48000, lengthbytes=143776, lengthpcm=543588, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.400496.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000020218FB6E38
+[LOG] SoundI::release                          : Gusts - Marker #4_2 (00000202DFCE8218)
+[LOG] SoundI::release                          :     Gusts - Marker #4_2 (000002023A3C6208)
+[LOG] SoundI::release                          :     Gusts - Marker #4_2 (00000202DFCEA588)
+[LOG] SoundI::release                          :  (00000202E012EE88)
+[LOG] SoundI::release                          :     Gusts - Marker #1_2 (000002023A3C8C48)
+[LOG] SoundI::release                          :  (00000202E012EBA8)
+[LOG] SoundI::release                          :     Gusts - Marker #2_2 (000002023A3CA988)
+[LOG] SoundI::release                          :  (00000202E012E8C8)
+[LOG] SoundI::release                          :     Gusts - Marker #3_2 (000002023A3CAB28)
+[LOG] SoundI::release                          :  (00000202E3C66A78)
+[LOG] SoundI::release                          :     Bloody Nightmare - Death Pacts_23 (000002023A3C63A8)
+[LOG] SoundI::release                          : Gusts - Marker #4_2 (0000020218FB6E38)
+[LOG] SoundI::release                          :     Gusts - Marker #4_2 (000002023A3C6A28)
+[LOG] SoundI::release                          :     Gusts - Marker #4_2 (000002023A381E58)
+[LOG] SoundI::release                          : Gusts - Marker #6_2 (000002023C80A8F8)
+[LOG] SoundI::release                          :     Gusts - Marker #6_2 (000002023A3C6068)
+[LOG] SoundI::release                          :     Gusts - Marker #6_2 (000002023C809308)
+[LOG] SoundI::release                          : Gusts - Marker #5_2 (000002023A3815E8)
+[LOG] SoundI::release                          :     Gusts - Marker #5_2 (000002023A3C70A8)
+[LOG] SoundI::release                          :     Gusts - Marker #5_2 (000002023C253618)
+[LOG] SoundI::release                          :  (00000202E3C6A3F8)
+[LOG] SoundI::release                          :     Bloody Nightmare - Death Pacts_34 (000002023A3C6548)
+[LOG] SoundI::release                          :  (00000202E3C68E68)
+[LOG] SoundI::release                          :     Bloody Nightmare - Death Pacts_36 (000002023A3C8908)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -53,3 +409,5 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
